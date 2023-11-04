@@ -131,7 +131,17 @@
       // ❗ Notes
       // 🧠 Even though object properties have no particular order, to avoid confusing
       // the test runner, please set in each object first name, then age, and finally jsLover.
-      const zip = () => {};
+      const zip = (names, years, bools) => {
+        let result = [];
+        for (let i = 0; i < names.length; i++) {
+          const name = names[i];
+          const born = years[i];
+          const jsLover = bools[i];
+          const obj = { name, born, jsLover };
+          result.push(obj);
+        }
+        return result;
+      };
 
       // 🧪 TESTS, do not work below this line
       // 🧪 TESTS, do not work below this line
