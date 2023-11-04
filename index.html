@@ -59,7 +59,7 @@
       // 🧠 The above recommendations allow to write the whole function body in just two clean lines!
       const headAndTail = (arr) => {
         let [first, ...rest] = arr;
-        return arr.length === 0 ? "This array is empty" : [first, rest];
+        return arr.length ? [first, rest] : "This array is empty";
       };
 
       // 👉 CHALLENGE 3
